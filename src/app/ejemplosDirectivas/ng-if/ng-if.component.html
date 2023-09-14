@@ -1,0 +1,9 @@
+<hr />
+<h1>NG IF</h1>
+
+<div *ngIf="condition; else condicionFalsa">Valor verdadero</div>
+<ng-template #condicionFalsa>Valor falso</ng-template>
+
+<button (click)="cambiarEstado()">
+  {{ condition ? "No mostrar" : "Mostrar" }}
+</button>

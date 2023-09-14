@@ -1,0 +1,9 @@
+<hr />
+<h1>NGFOR</h1>
+<div>
+  <div *ngFor="let persona of listado; index as i">
+    {{ i + " " + persona.nombre + " " + persona.apellido }}
+  </div>
+</div>
+
+<button (click)="agregarPersona()"></button>

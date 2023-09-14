@@ -1,0 +1,10 @@
+<hr />
+<h1>NG SWITCH</h1>
+<container-element [ngSwitch]="switch_expression">
+  <!-- the same view can be shown in more than one case -->
+  <div *ngSwitchCase="match_expression_1">Este es el caso 1</div>
+  <div *ngSwitchCase="match_expression_2">Este es el caso 2</div>
+  <div *ngSwitchCase="match_expression_3">Este es el caso 3</div>
+  <!--default case when there are no matches -->
+  <div *ngSwitchDefault>Error, valor no encontrado</div>
+</container-element>
